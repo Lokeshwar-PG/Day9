@@ -24,6 +24,11 @@ public class AddressBook {
         }
     }
 
+    public void deleteContact(Contact contact) {
+        contacts.remove(contact);
+        System.out.println(contact.getFirstName()+" deleted successfully from the contacts");
+    }
+
     public void displayContacts() {
         if(contacts.isEmpty()) {
             System.out.println("There is no contacts");
