@@ -13,6 +13,17 @@ public class AddressBook {
         System.out.println(contact.getFirstName()+" added succesfully to the contacts");
     }
 
+    public void updateContact(Contact updateContact) {
+        String firstName = updateContact.getFirstName();
+        for(Contact contact: contacts ) {
+            int updateIndex = contacts.indexOf(contact);
+            if(contact.getFirstName().equals(firstName)) {
+                contacts.set(updateIndex, updateContact);
+                break;
+            }
+        }
+    }
+
     public void displayContacts() {
         if(contacts.isEmpty()) {
             System.out.println("There is no contacts");
