@@ -1,19 +1,19 @@
-public class Contacts {
+public class Contact {
     private String firstName;
     private String lastName;
     private String address;
     private String city;
-    private String State;
+    private String state;
     private int zip;
     private String phoneNumber;
     private String email;
 
-    public Contacts(String firstName, String lastName, String address, String city, String state, int zip, String phoneNumber, String email) {
+    public Contact(String firstName, String lastName, String address, String city, String state, int zip, String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.city = city;
-        State = state;
+        this.state = state;
         this.zip = zip;
         this.phoneNumber = phoneNumber;
         this.email = email;
@@ -52,11 +52,11 @@ public class Contacts {
     }
 
     public String getState() {
-        return State;
+        return state;
     }
 
     public void setState(String state) {
-        State = state;
+        this.state = state;
     }
 
     public int getZip() {
