@@ -1,4 +1,4 @@
-public class AddressBookMain {
+public class Contacts {
     private String firstName;
     private String lastName;
     private String address;
@@ -8,7 +8,7 @@ public class AddressBookMain {
     private String phoneNumber;
     private String email;
 
-    public AddressBookMain(String firstName, String lastName, String address, String city, String state, int zip, String phoneNumber, String email) {
+    public Contacts(String firstName, String lastName, String address, String city, String state, int zip, String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
